@@ -1,7 +1,8 @@
-**Finding Lane Lines on the Road**
+# Finding Lane Lines on the Road
 
-This project accomplished the following objectives:
-* Making a pipeline that finds the lane lines on a road.
+## Objective:
+
+* To make a pipeline that finds the lane lines in images of roads.
 
 [//]: # (Image References)
 
@@ -11,7 +12,7 @@ This project accomplished the following objectives:
 
 ### Reflection
 
-###1. Describe your pipeline. As part of the description, explain how you modified the draw_lines() function.
+###1. My pipeline. As part of the description, explain how you modified the draw_lines() function.
 
 My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
 
