@@ -7,6 +7,7 @@
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
+[image_cs]: ./intermediate_images/color_select_solidWhiteCurve.jpg "final"
 [image_final]: ./intermediate_images/final_solidWhiteCurve.jpg "final"
 
 ---
@@ -22,7 +23,7 @@
 6. Hough transform line detection.
 7. Draw the lines on the original image. 
 
-##### Color Selection
+#### Color Selection
 
 
 
@@ -35,6 +36,11 @@ If you'd like to include images to show how the pipeline works, here is how to i
 ![alt text][image_final]
 
 ###2. Identify potential shortcomings with your current pipeline
+The first step is to select only the white and the yellow colors in the image. Because white is the optical combination of red, green, and blue, but yellow is only the combination of red and green, I remove all of the blue from my image. To make this cut I have implemented a function called `color_selection`. The final image looks likes this:
+
+![alt text][image_cs]
+
+
 
 
 One potential shortcoming would be what would happen when ... 
