@@ -1,5 +1,7 @@
 # Finding Lane Lines on the Road
 
+Please see the iPython notebook `P1_modified.pynb` for the code that accompanies this writeup.
+
 ## Objective:
 
 [//]: # (Image References)
