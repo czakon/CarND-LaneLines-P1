@@ -61,4 +61,8 @@ Using the slopes and the interecepts for the extracted lane lines, I then find w
 ### Possible shortcomings and suggestions for improvement. 
 My project failed on the challenge video. This, I believe, is because the hood of the car could be seen in the bottom part of the image. Because I put a prior on where I expect the left and the right lanes to be, I'm not exactly sure why this would crash my code, and this requires further investigation. Nevertheless, an obvious fix would be to cut out the bottom portion of the images in the future to prevent a mistake like this happening again.
 
+Overall, I did not think very hard whether the parameter limits that I imposed are physically reasonable, and in the future, and I would want to double-check that they make physcial sense. 
+
 I believe that that the lane lines in these test images where very bright and new. I would think that my process would fail if the lane lines are not so distinct. Or, if there are no lane lines, such as on a narrow road. 
+
+The major shortcoming of this project is that it was only tested on a limited number of test images in ideal conditions. As the sample size of testing images increases, I imagine that my pipeline might fail if the road has very tight turns, goes over a hill, or is driving in regions where there is a lot of color variation, such as tree-lined street with lots of dark and bright patches. 
