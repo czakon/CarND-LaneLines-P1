@@ -15,7 +15,7 @@
 
 ### Reflection
 
-###1. My main steps of my pipeleine are included in the `find_lines` function. I've made this general enough that I don't use the name `process_image`. There are seven major steps to the pipeline:
+###1. The main steps of my pipeleine are included in the `find_lines` function (not in `process_image`). There are seven major steps to the pipeline:
 1. Color selection.
 2. Defining the region of interest.
 3. Grayscaling. 
