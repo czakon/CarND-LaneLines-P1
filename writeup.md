@@ -2,14 +2,15 @@
 
 ## Objective:
 
-* To make a pipeline that finds the lane lines in images of roads. Using Canny edge detection and Hough transforms.
-
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
-[image_cs]: ./intermediate_images/color_select_solidWhiteCurve.jpg "final"
+[image_cs]: ./intermediate_images/color_select_solidYellowCurve.jpg "final"
 [image_final]: ./intermediate_images/final_solidWhiteCurve.jpg "final"
 
+* To make a pipeline that finds the lane lines in images of roads. Using Canny edge detection and Hough transforms. The output will look like the image below.
+
+![alt text][image_final]
 ---
 
 ### Reflection
@@ -26,14 +27,6 @@
 #### Color Selection
 
 
-
-
-In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
-
-If you'd like to include images to show how the pipeline works, here is how to include an image: 
-
-![alt text][image1]
-![alt text][image_final]
 
 ###2. Identify potential shortcomings with your current pipeline
 The first step is to select only the white and the yellow colors in the image. Because white is the optical combination of red, green, and blue, but yellow is only the combination of red and green, I remove all of the blue from my image. To make this cut I have implemented a function called `color_selection`. The final image looks likes this:
