@@ -13,9 +13,11 @@
 
 ### Reflection
 
-###1. My pipeline. As part of the description, explain how you modified the draw_lines() function.
+###1. My main steps of my pipeleine are included in the `find_lines` function. I've made this general enough that I don't use the name `process_image`. There are seven major steps to the pipeline:
+1. Color selection.
 
-My pipeline consisted of 5 steps. First, I converted the images to grayscale, then I .... 
+
+
 
 In order to draw a single line on the left and right lanes, I modified the draw_lines() function by ...
 
