@@ -2,11 +2,12 @@
 
 ## Objective:
 
-* To make a pipeline that finds the lane lines in images of roads.
+* To make a pipeline that finds the lane lines in images of roads. Using Canny edge detection and Hough transforms.
 
 [//]: # (Image References)
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
+[image_final]: ./intermediate_images/final_solidWhiteCurve.jpg "final"
 
 ---
 
@@ -21,7 +22,7 @@ In order to draw a single line on the left and right lanes, I modified the draw_
 If you'd like to include images to show how the pipeline works, here is how to include an image: 
 
 ![alt text][image1]
-
+![alt text][image_final]
 
 ###2. Identify potential shortcomings with your current pipeline
 
