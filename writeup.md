@@ -2,7 +2,7 @@
 
 ## Objective:
 
-* To make a pipeline that finds the lane lines in images of roads.
+* To make a pipeline that finds the lane lines in images of roads. Using Canny edge detection and Hough transforms.
 
 [//]: # (Image References)
 
