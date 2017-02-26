@@ -26,16 +26,13 @@
 
 #### Color Selection
 
-
-
-###2. Identify potential shortcomings with your current pipeline
 The first step is to select only the white and the yellow colors in the image. Because white is the optical combination of red, green, and blue, but yellow is only the combination of red and green, I remove all of the blue from my image. To make this cut I have implemented a function called `color_selection`. The final image looks likes this:
 
 ![alt text][image_cs]
 
 
 
-
+###2. Identify potential shortcomings with your current pipeline
 One potential shortcoming would be what would happen when ... 
 
 Another shortcoming could be ...
