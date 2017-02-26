@@ -44,9 +44,11 @@ Small discontinuities in the image can be removed by Gaussian smoothing. For thi
 
 #### Canny edge detection
 
-Edges can be detected using the OpenCV `Canny` function. Here, I use `low_threshold=50` and `high_threshold=200`. 
+Edges can be detected using the OpenCV `Canny` function, which uses gradient features in an image. Here, I use `low_threshold=50` and `high_threshold=200`. The `high_threshold` parameter defines how strong the gradient has to be identified as a line, and the `low_threshold` feature can be tuned to determine which neighboring pixels belong to the line. 
 
 #### Hough transform line detection
+
+Using the detected edges, we can then detect lines in the edges by looking at their signature in Hough space. The parameters that I tuned for this part of the project are the distance resolution (`rho=1`), the angular resolution in degrees (`theta=pi/180`), the minimum number of votes to be detected (`threshold=10`), the minimum length of the line (`min_line_len=20`), and the maximum gap between pixels that can be connected (`max_line_gap=4`). I simply tuned these parameters until they worked on the test images, however, more that should be given to make sure that they are physically reasonable parameters.
 
 #### Extracting the parameters for the left- and the right-lane lines
 
@@ -60,10 +62,3 @@ Using the slopes and the interecepts for the extracted lane lines, I then find w
 My project failed on the challenge video. This, I believe, is because the hood of the car could be seen in the bottom part of the image. Because I put a prior on where I expect the left and the right lanes to be, I'm not exactly sure why this would crash my code, and this requires further investigation. Nevertheless, an obvious fix would be to cut out the bottom portion of the images in the future to prevent a mistake like this happening again.
 
 I believe that that the lane lines in these test images where very bright and new. I would think that my process would fail if the lane lines are not so distinct. Or, if there are no lane lines, such as on a narrow road. 
-
-
-###3. Suggest possible improvements to your pipeline
-
-A possible improvement would be to ...
-
-Another potential improvement could be to ...
