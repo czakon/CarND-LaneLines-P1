@@ -6,6 +6,7 @@
 
 [image1]: ./examples/grayscale.jpg "Grayscale"
 [image_cs]: ./intermediate_images/color_select_solidYellowCurve.jpg "final"
+[image_cs]: ./intermediate_images/roi_solidYellowCurve.jpg "roi"
 [image_final]: ./intermediate_images/final_solidWhiteCurve.jpg "final"
 
 * To make a pipeline that finds the lane lines in images of roads. Using Canny edge detection and Hough transforms. The output will look like the image below.
