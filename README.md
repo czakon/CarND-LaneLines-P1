@@ -42,7 +42,7 @@ To exclude noise from the images, I masked all of the pixels in the image that w
 
 #### 3. Grayscaling
 
-In the following steps, the RGB image qualities of the image no long need to be preserve, and I reduce the image by 2 dimensions by implementing a grayscale this implements the OpenCV `cvtColor` option. 
+In the following steps, the RGB image qualities of the image no long need to be preserved, and I reduce the image by 2 dimensions by implementing a grayscale this implements the OpenCV `cvtColor` option. 
 
 #### 4. Gaussian smoothing
 
@@ -64,10 +64,12 @@ My approach in this part of the project was to use the simplest and the fastest 
 
 Using the slopes and the interecepts for the extracted lane lines, I then find what the x coordinates correspond to in the top and the bottom of my region of interest. With the subsequent two edge points that I have for the right and the left-lane lines, respectively, I then draw two lines using the OpenCV `line` function. Prompted by the suggestions in the project description, I use the `weighted_img` function to combine the image with a solid line with the original image, so that the lane lines do not look as bright, and so that it is possible to see the street below. 
 
+Finally, I applied the `find_lines` function to an mp4 movie, and these are included in the home directory under `white.mp4` and `yellow.mp4`.
+
 ### Possible shortcomings and suggestions for improvement. 
 My project failed on the challenge video. This, I believe, is because the hood of the car could be seen in the bottom part of the image. Because I put a prior on where I expect the left and the right lanes to be, I'm not exactly sure why this would crash my code, and this requires further investigation. Nevertheless, an obvious fix would be to cut out the bottom portion of the images in the future to prevent a mistake like this happening again.
 
-Overall, I did not think very hard whether the parameter limits that I imposed are physically reasonable, and in the future, and I would want to double-check that they make physcial sense. 
+Overall, I did not think very hard, on whether the parameter limits that I imposed are physically reasonable, and in the future, and I would want to double-check that they make physcial sense. 
 
 I believe that that the lane lines in these test images where very bright and new. I would think that my process would fail if the lane lines are not so distinct. Or, if there are no lane lines, such as on a narrow road. 
 
